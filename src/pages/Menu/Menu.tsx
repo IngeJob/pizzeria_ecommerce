@@ -54,7 +54,7 @@ const Menu = () => {
         <h1>Nuestro Menu</h1>
       </div>
       <div className='menu-page__links'>
-        <Link to='/' className='toHome'>Ir a la página principal</Link>
+        <Link to='/pizzeria_ecommerce/' className='toHome'>Ir a la página principal</Link>
         <span className='menu-page__cart' onClick={handleCart}>
           <Badge badgeContent={totalProducts} color='error'>
             <GiShoppingCart/>

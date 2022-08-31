@@ -12,7 +12,7 @@ const Header = () => {
       <div className='header__title'>     
         <h1 className='ht_h1'>Pizza house</h1>
         <div className='header__title-see'>
-        <a href='/#About' className='custom__button ht_a'>Ver más</a>
+        <a href='/pizzeria_ecommerce/#About' className='custom__button ht_a'>Ver más</a>
           <BsChevronDoubleDown className='ht_arrow' />
         </div>
       </div>

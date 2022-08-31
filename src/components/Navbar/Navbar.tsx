@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { handleCartOpen } from '../../features/Cart/cartSlice';
-import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
 import { AiOutlineClose } from "react-icons/ai";
@@ -49,8 +48,8 @@ const Navbar = () => {
         </div>
 
           <ul className='navbar__links-ul p__nav'>
-            <li className='navbar__links-li'><Link to='/#About'>Nosotros</Link></li>          
-            <li className='navbar__links-li'><a href="/#Menu">Menú</a></li>
+            <li className='navbar__links-li'><a href='#About'>Nosotros</a></li>          
+            <li className='navbar__links-li'><a href="#Menu">Menú</a></li>
             <li className='navbar__links-li'><a href="#Contact">Contacto</a></li>
             <li className='navbar__links-li cart-custom' style={{marginRight: '0'}} onClick={handleCart}> 
               <Badge badgeContent={totalProducts} color='error'>
@@ -71,7 +70,7 @@ const Navbar = () => {
           }
           {menuHamb&&
             <ul className='navbar__hamb__links-ul'>
-              <li className='navbar__hamb__links-li'><Link to='/#About' onClick={closeHamb}>Nosotros</Link></li>
+              <li className='navbar__hamb__links-li'><a href='#About' onClick={closeHamb}>Nosotros</a></li>
               <li className='navbar__hamb__links-li'><a href="#Menu" onClick={closeHamb}>Menú</a></li>
               <li className='navbar__hamb__links-li'><a href="#Contact" onClick={closeHamb}>Contacto</a></li>
             </ul>

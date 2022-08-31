@@ -74,3 +74,9 @@
 .toHome:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 650px){
+    .toHome{
+        font-size: 13px;
+    }
+}
