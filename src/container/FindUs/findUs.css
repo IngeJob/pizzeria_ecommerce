@@ -1,0 +1,48 @@
+
+
+.findUs__container{
+    display: flex;
+    background: url('../../assets/map4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.findUs__map{
+    display: flex;
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.findUs__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex: 1;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.about__desc-title img{
+    width: 3rem;
+}
+
+
+@media screen and (max-width: 950px) {
+    .findUs__container{
+        flex-direction: column-reverse;
+    }
+
+    .findUs__content{
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .findUs__map iframe{
+        width: 400px;
+    }
+}

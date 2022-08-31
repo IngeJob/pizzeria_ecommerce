@@ -1,0 +1,29 @@
+.btn-btt{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: var(--color-green);
+    border-radius: 5%;
+    cursor: pointer;
+    border: none;
+    padding: 10px 28px;
+}
+
+.btt-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .btt-txt{
+        display: none;
+    }
+
+    .btt-icon{
+        display: block;
+    }
+
+    .btn-btt{
+        font-size: 20px;
+        padding: 10px;
+    }
+}

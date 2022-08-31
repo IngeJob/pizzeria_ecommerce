@@ -1,0 +1,66 @@
+.about__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background: url('../../assets/Hexagon.svg')
+}
+
+.about__desc{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.about__img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img img{
+    width: 32vw;
+    border-radius: 3%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about__desc-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.about__desc-title h2{
+    margin-right: 1rem;
+    border-bottom: 2px solid green;
+} 
+
+.about__desc-title img{
+    width: 4rem;
+}
+
+@media screen and (max-width: 900px){
+    .about__img img{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about__container{
+        flex-direction: column;
+    }
+
+    .about__img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about__desc-title img{
+        width: 3rem;
+    }
+}

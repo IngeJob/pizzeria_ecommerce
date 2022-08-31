@@ -1,0 +1,11 @@
+.cart__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; 
+}
+
+.cart__container > h2{
+    color: var(--color-red);
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,51 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+
+    background: url('../../assets/table.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+   
+}
+
+.contact__h1{
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 80px;
+    color: var(--color-green);
+}
+
+.contact__title{
+    text-align: center;
+}
+
+.contact__icons{
+    padding-bottom: 3rem;
+}
+
+.contact__icons a{
+    margin-left: 2rem;
+}
+
+.contact__icons a img{
+    width: 70px;
+}
+
+.contact__icons a:nth-child(3) img{
+    width: 60px;
+}
+
+@media screen and (max-width: 900px){
+    .contact > img{
+        width: 100%;
+    }
+}
+

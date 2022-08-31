@@ -1,0 +1,76 @@
+.menu-page{
+    background: url('../../assets/pizza_bg.jpg');
+    background-size: contain;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.menu-page__header{
+    text-align: center;
+}
+
+.menu-page__header h1{
+    text-align: center;
+}
+
+.menu-page__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-page__nav h3{
+    position: relative;  
+}
+
+.menu-page__nav h3::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-green), var(--color-bg), var(--color-red));
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;  
+}
+
+.menu-page__nav h3:hover::before {
+    transform: scaleX(1);
+}
+
+.menu-page__nav > h3{
+    margin: 1rem 2rem 0 2rem;  
+    cursor: pointer;  
+}
+
+.menu-page__links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.menu-page__cart{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 25px;
+}
+
+.toHome{
+    color: #04380c;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.toHome:hover{
+    text-decoration: underline;
+}
