@@ -18,14 +18,14 @@ const Cart = () => {
 
   return (
     <div className='cart__container'>
-      <h2>Carrito de Compras</h2>
+      <h2>Carrito de Comprassssssssss</h2>
       {totalItems.length ===0?<p>No hay artículos en el carrito</p>:null}
       {totalItems?.map((item) => (
         <CartItem item={item} />
       )
       )}
       <h2>Total: ${calculateTotal(totalItems).toFixed(2)}</h2>
-      <span className='close-menu'><button onClick={handleCartOpen} className='btn-menu'>X</button></span>
+      <span className='close-menu'><button onClick={handleCart} className='btn-menu'>X</button></span>
     </div>
   )
 }
